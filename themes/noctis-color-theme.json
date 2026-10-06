@@ -756,6 +756,112 @@
       "settings": {
         "foreground": "#82AAFF"
       }
+    },
+    {
+      "name": "Rust Lifetimes & Macros",
+      "scope": [
+        "storage.modifier.lifetime.rust",
+        "entity.name.lifetime.rust",
+        "support.macro.rust",
+        "entity.name.function.macro.rust"
+      ],
+      "settings": {
+        "foreground": "#FF9CAC"
+      }
+    },
+    {
+      "name": "Rust Traits & Impl",
+      "scope": [
+        "entity.name.type.trait.rust",
+        "keyword.other.rust"
+      ],
+      "settings": {
+        "foreground": "#89DDFF"
+      }
+    },
+    {
+      "name": "Go Package & Builtins",
+      "scope": [
+        "entity.name.package.go",
+        "keyword.package.go",
+        "keyword.import.go"
+      ],
+      "settings": {
+        "foreground": "#C792EA"
+      }
+    },
+    {
+      "name": "C/C++ Preprocessor & Macros",
+      "scope": [
+        "keyword.control.directive",
+        "punctuation.definition.directive",
+        "entity.name.function.preprocessor"
+      ],
+      "settings": {
+        "foreground": "#C792EA"
+      }
+    },
+    {
+      "name": "Java/C# Annotations & Attributes",
+      "scope": [
+        "storage.type.annotation",
+        "punctuation.definition.annotation"
+      ],
+      "settings": {
+        "foreground": "#F5C76B"
+      }
+    },
+    {
+      "name": "PHP Variables & Sigils",
+      "scope": [
+        "variable.other.php",
+        "punctuation.definition.variable.php"
+      ],
+      "settings": {
+        "foreground": "#E6E9EF"
+      }
+    },
+    {
+      "name": "React Component Names (JSX/TSX)",
+      "scope": [
+        "support.class.component.tsx",
+        "support.class.component.jsx",
+        "entity.name.tag.tsx",
+        "entity.name.tag.jsx"
+      ],
+      "settings": {
+        "foreground": "#82AAFF"
+      }
+    },
+    {
+      "name": "Python Magic Methods & Special Attributes",
+      "scope": [
+        "support.function.magic.python",
+        "support.variable.magic.python"
+      ],
+      "settings": {
+        "foreground": "#82AAFF",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown Table Header & Borders",
+      "scope": [
+        "markup.table.header",
+        "punctuation.section.table"
+      ],
+      "settings": {
+        "foreground": "#8B7CFF"
+      }
+    },
+    {
+      "name": "JSON Primitive Values",
+      "scope": [
+        "constant.language.json"
+      ],
+      "settings": {
+        "foreground": "#FF9CAC"
+      }
     }
   ]
 }
