@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "noctis-workspace-demo",
+  "version": "1.0.0",
+  "description": "Realistic configuration payload to test JSON syntax highlighting",
+  "private": true,
+  "themeSettings": {
+    "activeTheme": "Noctis",
+    "bracketPairColorization": true,
+    "cursorBlinking": "smooth",
+    "cursorSmoothCaretAnimation": "on",
+    "renderWhitespace": "selection",
+    "fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+    "fontSize": 14.5,
+    "lineHeight": 24,
+    "depthLevels": 4
+  },
+  "palette": {
+    "primary": "#8B7CFF",
+    "background": "#0B0D11",
+    "surface": "#101319",
+    "elevated": "#151922",
+    "border": "#242936"
+  },
+  "features": [
+    "deep-work-focus",
+    "semantic-token-support",
+    "oled-midnight-mode",
+    "crimson-restrained-accents"
+  ],
+  "telemetry": {
+    "enabled": false,
+    "endpoint": null,
+    "sampleRate": 0.0
+  }
+}

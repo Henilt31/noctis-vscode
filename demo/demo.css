@@ -1,0 +1,84 @@
+/* Noctis Theme - CSS Stylesheet Demo */
+:root {
+  --noctis-bg-base: #08090C;
+  --noctis-bg-editor: #0B0D11;
+  --noctis-surface-1: #101319;
+  --noctis-surface-2: #151922;
+  --noctis-border: #242936;
+  --noctis-fg-main: #E6E9EF;
+  --noctis-fg-muted: #8B93A3;
+  --noctis-accent: #8B7CFF;
+  --noctis-accent-hover: #9E90FF;
+  --noctis-cyan: #5CC8FF;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.theme-noctis {
+  background-color: var(--noctis-bg-editor);
+  color: var(--noctis-fg-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: var(--noctis-surface-1);
+  border: 1px solid var(--noctis-border);
+  border-radius: var(--radius-md);
+  margin-bottom: 2.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 180ms ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--noctis-accent);
+  color: var(--noctis-bg-base);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--noctis-accent-hover);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
