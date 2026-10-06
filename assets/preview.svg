@@ -1,0 +1,285 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 740" width="1200" height="740">
+  <defs>
+    <filter id="winShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="740" fill="#08090C" />
+
+  <!-- VS Code Window Frame -->
+  <g transform="translate(30, 20)" filter="url(#winShadow)">
+    <rect width="1140" height="700" rx="12" fill="#08090C" stroke="#242936" stroke-width="2" />
+
+    <!-- Title Bar -->
+    <rect width="1140" height="38" rx="12" fill="#08090C" />
+    <rect y="26" width="1140" height="12" fill="#08090C" />
+    <line x1="0" y1="38" x2="1140" y2="38" stroke="#1B2029" stroke-width="1" />
+
+    <!-- Window Controls -->
+    <circle cx="22" cy="19" r="6" fill="#FF5F56" />
+    <circle cx="42" cy="19" r="6" fill="#FFBD2E" />
+    <circle cx="62" cy="19" r="6" fill="#27C93F" />
+
+    <!-- Search/Command Center -->
+    <rect x="370" y="7" width="400" height="24" rx="6" fill="#101319" stroke="#242936" stroke-width="1" />
+    <text x="470" y="23" font-family="-apple-system, sans-serif" font-size="12" fill="#8B93A3">noctis-vscode - demo.ts</text>
+
+    <!-- Activity Bar (Left 50px) -->
+    <rect x="0" y="38" width="50" height="636" fill="#08090C" />
+    <line x1="50" y1="38" x2="50" y2="674" stroke="#1B2029" stroke-width="1" />
+
+    <!-- Activity Bar Icons -->
+    <!-- Explorer (Active) -->
+    <rect x="0" y="48" width="3" height="32" fill="#8B7CFF" />
+    <path d="M 18 56 L 32 56 L 32 72 L 18 72 Z" fill="none" stroke="#8B7CFF" stroke-width="2" />
+    <!-- Search -->
+    <circle cx="25" cy="100" r="6" fill="none" stroke="#5F6878" stroke-width="2" />
+    <line x1="29" y1="104" x2="35" y2="110" stroke="#5F6878" stroke-width="2" />
+    <!-- Git -->
+    <circle cx="25" cy="136" r="4" fill="none" stroke="#5F6878" stroke-width="2" />
+    <circle cx="25" cy="150" r="4" fill="none" stroke="#5F6878" stroke-width="2" />
+    <line x1="25" y1="140" x2="25" y2="146" stroke="#5F6878" stroke-width="2" />
+
+    <!-- Side Bar (Width 210px) -->
+    <rect x="50" y="38" width="210" height="636" fill="#08090C" />
+    <line x1="260" y1="38" x2="260" y2="674" stroke="#1B2029" stroke-width="1" />
+
+    <text x="66" y="60" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#8B93A3" letter-spacing="1">EXPLORER</text>
+
+    <!-- Explorer tree -->
+    <text x="66" y="86" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#E6E9EF">v NOCTIS-VSCODE</text>
+    <text x="82" y="110" font-family="-apple-system, sans-serif" font-size="12" fill="#8B93A3">> themes</text>
+    <text x="82" y="132" font-family="-apple-system, sans-serif" font-size="12" fill="#8B93A3">v demo</text>
+    
+    <!-- Active File Highlight in Tree -->
+    <rect x="74" y="142" width="186" height="24" fill="#151922" rx="4" />
+    <text x="96" y="158" font-family="-apple-system, sans-serif" font-size="12" fill="#8B7CFF" font-weight="600">TS  demo.ts</text>
+    <text x="96" y="182" font-family="-apple-system, sans-serif" font-size="12" fill="#8B93A3">TSX demo.tsx</text>
+    <text x="96" y="204" font-family="-apple-system, sans-serif" font-size="12" fill="#8B93A3">PY  demo.py</text>
+    <text x="96" y="226" font-family="-apple-system, sans-serif" font-size="12" fill="#8B93A3">{}  demo.json</text>
+    <text x="96" y="248" font-family="-apple-system, sans-serif" font-size="12" fill="#8B93A3">MD  demo.md</text>
+
+    <!-- Editor Group Header / Tabs -->
+    <rect x="260" y="38" width="880" height="36" fill="#08090C" />
+    <line x1="260" y1="74" x2="1140" y2="74" stroke="#1B2029" stroke-width="1" />
+
+    <!-- Active Tab (demo.ts) -->
+    <rect x="260" y="38" width="140" height="36" fill="#0B0D11" />
+    <rect x="260" y="38" width="140" height="2" fill="#8B7CFF" />
+    <line x1="400" y1="38" x2="400" y2="74" stroke="#1B2029" stroke-width="1" />
+    <text x="278" y="60" font-family="-apple-system, sans-serif" font-size="12" fill="#E6E9EF" font-weight="600">demo.ts</text>
+
+    <!-- Inactive Tab (demo.tsx) -->
+    <rect x="400" y="38" width="140" height="36" fill="#08090C" />
+    <line x1="540" y1="38" x2="540" y2="74" stroke="#1B2029" stroke-width="1" />
+    <text x="418" y="60" font-family="-apple-system, sans-serif" font-size="12" fill="#8B93A3">demo.tsx</text>
+
+    <!-- Inactive Tab (demo.py) -->
+    <rect x="540" y="38" width="140" height="36" fill="#08090C" />
+    <line x1="680" y1="38" x2="680" y2="74" stroke="#1B2029" stroke-width="1" />
+    <text x="558" y="60" font-family="-apple-system, sans-serif" font-size="12" fill="#8B93A3">demo.py</text>
+
+    <!-- Breadcrumb Bar -->
+    <rect x="260" y="75" width="880" height="24" fill="#0B0D11" />
+    <text x="280" y="91" font-family="-apple-system, sans-serif" font-size="11" fill="#8B93A3">demo  ›  demo.ts  ›  executeDeepWorkPipeline</text>
+    <line x1="260" y1="99" x2="1140" y2="99" stroke="#1B2029" stroke-width="1" />
+
+    <!-- Editor Canvas -->
+    <rect x="260" y="100" width="880" height="420" fill="#0B0D11" />
+
+    <!-- Line Highlight for Line 14 -->
+    <rect x="260" y="356" width="800" height="22" fill="#101319" />
+
+    <!-- Line Numbers -->
+    <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" fill="#5F6878" text-anchor="end">
+      <text x="295" y="132">1</text>
+      <text x="295" y="154">2</text>
+      <text x="295" y="176">3</text>
+      <text x="295" y="198">4</text>
+      <text x="295" y="220">5</text>
+      <text x="295" y="242">6</text>
+      <text x="295" y="264">7</text>
+      <text x="295" y="286">8</text>
+      <text x="295" y="308">9</text>
+      <text x="295" y="330">10</text>
+      <text x="295" y="352">11</text>
+      <text x="295" y="372" fill="#8B7CFF" font-weight="700">12</text>
+      <text x="295" y="394">13</text>
+      <text x="295" y="416">14</text>
+      <text x="295" y="438">15</text>
+      <text x="295" y="460">16</text>
+      <text x="295" y="482">17</text>
+    </g>
+
+    <!-- Code Syntax Content -->
+    <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13">
+      <!-- Line 1: Comment -->
+      <text x="315" y="132" fill="#596273" font-style="italic">/** Noctis Theme - Deep Work Engine */</text>
+
+      <!-- Line 2: Empty -->
+
+      <!-- Line 3: Interface -->
+      <text x="315" y="176">
+        <tspan fill="#C792EA">export </tspan>
+        <tspan fill="#C792EA">interface </tspan>
+        <tspan fill="#89DDFF">SessionConfig </tspan>
+        <tspan fill="#89DDFF">{</tspan>
+      </text>
+
+      <!-- Line 4: Property -->
+      <text x="335" y="198">
+        <tspan fill="#C792EA">readonly </tspan>
+        <tspan fill="#E6E9EF">sessionId</tspan>
+        <tspan fill="#89DDFF">: </tspan>
+        <tspan fill="#89DDFF">string</tspan>
+        <tspan fill="#89DDFF">;</tspan>
+      </text>
+
+      <!-- Line 5: Property -->
+      <text x="335" y="220">
+        <tspan fill="#E6E9EF">maxRetries</tspan>
+        <tspan fill="#89DDFF">: </tspan>
+        <tspan fill="#89DDFF">number</tspan>
+        <tspan fill="#89DDFF">;</tspan>
+      </text>
+
+      <!-- Line 6: Property with string union -->
+      <text x="335" y="242">
+        <tspan fill="#E6E9EF">environment</tspan>
+        <tspan fill="#89DDFF">: </tspan>
+        <tspan fill="#A6E3A1">'development' </tspan>
+        <tspan fill="#89DDFF">| </tspan>
+        <tspan fill="#A6E3A1">'production'</tspan>
+        <tspan fill="#89DDFF">;</tspan>
+      </text>
+
+      <!-- Line 7: Closing brace -->
+      <text x="315" y="264" fill="#89DDFF">}</text>
+
+      <!-- Line 8: Empty -->
+
+      <!-- Line 9: Function declaration -->
+      <text x="315" y="308">
+        <tspan fill="#C792EA">export </tspan>
+        <tspan fill="#C792EA">async </tspan>
+        <tspan fill="#C792EA">function </tspan>
+        <tspan fill="#82AAFF">executeDeepWork</tspan>
+        <tspan fill="#89DDFF">&lt;</tspan><tspan fill="#89DDFF">T</tspan><tspan fill="#89DDFF">&gt;</tspan>
+        <tspan fill="#89DDFF">(</tspan>
+        <tspan fill="#E6E9EF">config</tspan>
+        <tspan fill="#89DDFF">: </tspan>
+        <tspan fill="#89DDFF">SessionConfig</tspan>
+        <tspan fill="#89DDFF">): </tspan>
+        <tspan fill="#89DDFF">Promise</tspan>
+        <tspan fill="#89DDFF">&lt;</tspan><tspan fill="#89DDFF">T</tspan><tspan fill="#89DDFF">&gt; </tspan>
+        <tspan fill="#89DDFF">{</tspan>
+      </text>
+
+      <!-- Line 10: Constant -->
+      <text x="335" y="330">
+        <tspan fill="#C792EA">const </tspan>
+        <tspan fill="#E6E9EF">startTime </tspan>
+        <tspan fill="#89DDFF">= </tspan>
+        <tspan fill="#82AAFF">Date</tspan><tspan fill="#89DDFF">.</tspan><tspan fill="#82AAFF">now</tspan><tspan fill="#89DDFF">();</tspan>
+      </text>
+
+      <!-- Line 11: Try statement -->
+      <text x="335" y="352">
+        <tspan fill="#C792EA">try </tspan>
+        <tspan fill="#89DDFF">{</tspan>
+      </text>
+
+      <!-- Line 12: Active line with cursor -->
+      <text x="355" y="372">
+        <tspan fill="#82AAFF">console</tspan><tspan fill="#89DDFF">.</tspan><tspan fill="#82AAFF">log</tspan><tspan fill="#89DDFF">(</tspan><tspan fill="#A6E3A1">`[Noctis] Initialized session: ${</tspan><tspan fill="#E6E9EF">config</tspan><tspan fill="#89DDFF">.</tspan><tspan fill="#E6E9EF">sessionId</tspan><tspan fill="#A6E3A1">}`</tspan><tspan fill="#89DDFF">);</tspan>
+      </text>
+      <!-- Cursor -->
+      <rect x="795" y="359" width="2" height="15" fill="#8B7CFF" />
+
+      <!-- Line 13: Return -->
+      <text x="355" y="394">
+        <tspan fill="#C792EA">return </tspan>
+        <tspan fill="#C792EA">await </tspan>
+        <tspan fill="#82AAFF">dispatchAsyncTasks</tspan><tspan fill="#89DDFF">(</tspan><tspan fill="#E6E9EF">config</tspan><tspan fill="#89DDFF">);</tspan>
+      </text>
+
+      <!-- Line 14: Catch -->
+      <text x="335" y="416">
+        <tspan fill="#89DDFF">} </tspan>
+        <tspan fill="#C792EA">catch </tspan>
+        <tspan fill="#89DDFF">(</tspan><tspan fill="#E6E9EF">err</tspan><tspan fill="#89DDFF">) {</tspan>
+      </text>
+
+      <!-- Line 15: Error log -->
+      <text x="355" y="438">
+        <tspan fill="#82AAFF">console</tspan><tspan fill="#89DDFF">.</tspan><tspan fill="#82AAFF">error</tspan><tspan fill="#89DDFF">(</tspan><tspan fill="#FF6B7A">'Deep work task failed'</tspan><tspan fill="#89DDFF">, </tspan><tspan fill="#E6E9EF">err</tspan><tspan fill="#89DDFF">);</tspan>
+      </text>
+
+      <!-- Line 16: Closing brace -->
+      <text x="335" y="460" fill="#89DDFF">}</text>
+
+      <!-- Line 17: Closing brace -->
+      <text x="315" y="482" fill="#89DDFF">}</text>
+    </g>
+
+    <!-- Minimap Preview (Right 80px) -->
+    <rect x="1060" y="100" width="80" height="420" fill="#0B0D11" />
+    <line x1="1060" y1="100" x2="1060" y2="520" stroke="#1B2029" stroke-width="1" />
+    <rect x="1070" y="120" width="45" height="4" fill="#596273" opacity="0.6" />
+    <rect x="1070" y="128" width="55" height="4" fill="#C792EA" opacity="0.6" />
+    <rect x="1075" y="136" width="40" height="3" fill="#89DDFF" opacity="0.5" />
+    <rect x="1075" y="142" width="35" height="3" fill="#E6E9EF" opacity="0.5" />
+    <rect x="1070" y="152" width="60" height="4" fill="#82AAFF" opacity="0.6" />
+    <!-- Minimap Slider -->
+    <rect x="1062" y="120" width="76" height="50" fill="#242936" opacity="0.3" rx="3" />
+
+    <!-- Integrated Terminal Panel (Bottom) -->
+    <rect x="260" y="520" width="880" height="154" fill="#08090C" />
+    <line x1="260" y1="520" x2="1140" y2="520" stroke="#1B2029" stroke-width="1" />
+
+    <!-- Terminal Header -->
+    <text x="280" y="538" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#E6E9EF">TERMINAL</text>
+    <text x="360" y="538" font-family="-apple-system, sans-serif" font-size="11" fill="#5F6878">OUTPUT</text>
+    <text x="430" y="538" font-family="-apple-system, sans-serif" font-size="11" fill="#5F6878">DEBUG CONSOLE</text>
+    <text x="540" y="538" font-family="-apple-system, sans-serif" font-size="11" fill="#5F6878">PROBLEMS</text>
+
+    <!-- Terminal Lines -->
+    <g font-family="'JetBrains Mono', monospace" font-size="12">
+      <text x="280" y="566">
+        <tspan fill="#4ADE80">➜ </tspan>
+        <tspan fill="#5CC8FF">noctis-vscode </tspan>
+        <tspan fill="#C792EA">git:(</tspan><tspan fill="#FF9CAC">main</tspan><tspan fill="#C792EA">) </tspan>
+        <tspan fill="#E6E9EF">npx @vscode/vsce package</tspan>
+      </text>
+      <text x="280" y="590" fill="#8B93A3">[11:42:15] Executing pre-publish validation checks...</text>
+      <text x="280" y="612" fill="#4ADE80">✔ Verified 4 themes (Noctis, Crimson, Violet, Midnight OLED)</text>
+      <text x="280" y="634" fill="#4ADE80">✔ Packaged: noctis-theme-0.1.0.vsix (clean build)</text>
+      <text x="280" y="656">
+        <tspan fill="#4ADE80">➜ </tspan>
+        <tspan fill="#5CC8FF">noctis-vscode </tspan>
+        <tspan fill="#C792EA">git:(</tspan><tspan fill="#FF9CAC">main</tspan><tspan fill="#C792EA">) </tspan>
+        <rect x="520" y="644" width="8" height="15" fill="#8B7CFF" />
+      </text>
+    </g>
+
+    <!-- Status Bar (Bottom 26px) -->
+    <rect y="674" width="1140" height="26" rx="12" fill="#08090C" />
+    <rect y="674" width="1140" height="12" fill="#08090C" />
+    <line x1="0" y1="674" x2="1140" y2="674" stroke="#1B2029" stroke-width="1" />
+
+    <!-- Status Bar Items -->
+    <!-- Remote/Branch -->
+    <rect x="0" y="674" width="38" height="26" fill="#8B7CFF" rx="4" />
+    <text x="12" y="691" font-family="-apple-system, sans-serif" font-size="12" fill="#08090C" font-weight="700">&gt;&lt;</text>
+    <text x="48" y="691" font-family="-apple-system, sans-serif" font-size="11" fill="#8B93A3">main*</text>
+    <text x="96" y="691" font-family="-apple-system, sans-serif" font-size="11" fill="#8B93A3">0 ⨂  0 ⚠</text>
+
+    <!-- Right Status Items -->
+    <text x="920" y="691" font-family="-apple-system, sans-serif" font-size="11" fill="#8B93A3">Spaces: 2</text>
+    <text x="990" y="691" font-family="-apple-system, sans-serif" font-size="11" fill="#8B93A3">UTF-8</text>
+    <text x="1040" y="691" font-family="-apple-system, sans-serif" font-size="11" fill="#8B93A3">TypeScript</text>
+    <text x="1105" y="691" font-family="-apple-system, sans-serif" font-size="11" fill="#8B7CFF" font-weight="600">Noctis</text>
+  </g>
+</svg>

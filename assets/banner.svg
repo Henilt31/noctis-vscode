@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101319" />
+      <stop offset="50%" stop-color="#0B0D11" />
+      <stop offset="100%" stop-color="#08090C" />
+    </linearGradient>
+    <linearGradient id="brandAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B7CFF" />
+      <stop offset="100%" stop-color="#5CC8FF" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="24" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="360" fill="url(#bgGradient)" rx="16" />
+  <rect x="1" y="1" width="1198" height="358" fill="none" stroke="#242936" stroke-width="2" rx="15" />
+
+  <!-- Background Ambient Glow -->
+  <circle cx="160" cy="180" r="140" fill="#8B7CFF" opacity="0.06" filter="url(#subtleGlow)" />
+  <circle cx="1060" cy="180" r="140" fill="#5CC8FF" opacity="0.04" filter="url(#subtleGlow)" />
+
+  <!-- Left Icon Emblem -->
+  <g transform="translate(80, 100)">
+    <!-- Squircle container -->
+    <rect width="160" height="160" rx="36" fill="#151922" stroke="#242936" stroke-width="2" />
+    <circle cx="80" cy="80" r="54" fill="none" stroke="#1B2029" stroke-width="4" />
+    <path d="M 52 42 A 54 54 0 0 0 52 118" fill="none" stroke="#8B7CFF" stroke-width="7" stroke-linecap="round" />
+    <!-- Geometric N -->
+    <line x1="60" y1="110" x2="60" y2="50" stroke="#8B7CFF" stroke-width="9" stroke-linecap="round" />
+    <line x1="60" y1="50" x2="100" y2="110" stroke="url(#brandAccent)" stroke-width="9" stroke-linecap="round" />
+    <line x1="100" y1="110" x2="100" y2="50" stroke="#5CC8FF" stroke-width="9" stroke-linecap="round" />
+    <circle cx="80" cy="80" r="4" fill="#E6E9EF" />
+  </g>
+
+  <!-- Central Typography -->
+  <g transform="translate(280, 0)">
+    <text x="0" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="54" font-weight="800" fill="#E6E9EF" letter-spacing="4">NOCTIS</text>
+    <text x="0" y="190" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="22" font-weight="500" fill="#8B7CFF" letter-spacing="1">Darkness, clarity, and code.</text>
+    <text x="0" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="16" font-weight="400" fill="#8B93A3">A dark VS Code theme engineered for deep work.</text>
+
+    <!-- Variant Indicator Pills -->
+    <g transform="translate(0, 260)">
+      <!-- Default Noctis -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="34" rx="17" fill="#151922" stroke="#8B7CFF" stroke-width="1.5" />
+        <circle cx="18" cy="17" r="5" fill="#8B7CFF" />
+        <text x="32" y="23" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#E6E9EF">Noctis</text>
+      </g>
+      <!-- Noctis Crimson -->
+      <g transform="translate(145, 0)">
+        <rect width="145" height="34" rx="17" fill="#181014" stroke="#FF5C77" stroke-width="1.5" />
+        <circle cx="18" cy="17" r="5" fill="#FF5C77" />
+        <text x="32" y="23" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#EBE6E8">Crimson</text>
+      </g>
+      <!-- Noctis Violet -->
+      <g transform="translate(305, 0)">
+        <rect width="135" height="34" rx="17" fill="#13101F" stroke="#A855F7" stroke-width="1.5" />
+        <circle cx="18" cy="17" r="5" fill="#A855F7" />
+        <text x="32" y="23" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#ECE8F5">Violet</text>
+      </g>
+      <!-- Noctis Midnight -->
+      <g transform="translate(455, 0)">
+        <rect width="150" height="34" rx="17" fill="#090B0F" stroke="#708DF5" stroke-width="1.5" />
+        <circle cx="18" cy="17" r="5" fill="#708DF5" />
+        <text x="32" y="23" font-family="-apple-system, sans-serif" font-size="13" font-weight="600" fill="#E6EBF2">Midnight OLED</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Palette Swatches -->
+  <g transform="translate(970, 75)">
+    <rect width="170" height="210" rx="14" fill="#101319" stroke="#1B2029" stroke-width="1.5" />
+    <text x="20" y="32" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#8B93A3" letter-spacing="1">COLOR ARCHITECTURE</text>
+    
+    <!-- Swatch rows -->
+    <g transform="translate(20, 48)">
+      <circle cx="8" cy="8" r="8" fill="#8B7CFF" />
+      <text x="26" y="12" font-family="monospace" font-size="12" fill="#E6E9EF">#8B7CFF Accent</text>
+    </g>
+    <g transform="translate(20, 78)">
+      <circle cx="8" cy="8" r="8" fill="#82AAFF" />
+      <text x="26" y="12" font-family="monospace" font-size="12" fill="#E6E9EF">#82AAFF Function</text>
+    </g>
+    <g transform="translate(20, 108)">
+      <circle cx="8" cy="8" r="8" fill="#C792EA" />
+      <text x="26" y="12" font-family="monospace" font-size="12" fill="#E6E9EF">#C792EA Keyword</text>
+    </g>
+    <g transform="translate(20, 138)">
+      <circle cx="8" cy="8" r="8" fill="#A6E3A1" />
+      <text x="26" y="12" font-family="monospace" font-size="12" fill="#E6E9EF">#A6E3A1 String</text>
+    </g>
+    <g transform="translate(20, 168)">
+      <circle cx="8" cy="8" r="8" fill="#F5C76B" />
+      <text x="26" y="12" font-family="monospace" font-size="12" fill="#E6E9EF">#F5C76B Constant</text>
+    </g>
+  </g>
+</svg>

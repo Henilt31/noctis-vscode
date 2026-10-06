@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101319" />
+      <stop offset="100%" stop-color="#08090C" />
+    </linearGradient>
+    <linearGradient id="nGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B7CFF" />
+      <stop offset="100%" stop-color="#5CC8FF" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background squircle -->
+  <rect x="8" y="8" width="240" height="240" rx="54" fill="url(#bgGrad)" stroke="#242936" stroke-width="4" />
+
+  <!-- Outer Eclipse Ring -->
+  <circle cx="128" cy="128" r="82" fill="none" stroke="#1B2029" stroke-width="6" />
+
+  <!-- Crescent Glow Arc -->
+  <path d="M 86 70 A 82 82 0 0 0 86 186" fill="none" stroke="#8B7CFF" stroke-width="10" stroke-linecap="round" />
+
+  <!-- Geometric Abstract 'N' Symbol -->
+  <!-- Left Pillar -->
+  <line x1="96" y1="172" x2="96" y2="84" stroke="#8B7CFF" stroke-width="14" stroke-linecap="round" />
+  
+  <!-- Diagonal Beam -->
+  <line x1="96" y1="84" x2="160" y2="172" stroke="url(#nGrad)" stroke-width="14" stroke-linecap="round" />
+
+  <!-- Right Pillar -->
+  <line x1="160" y1="172" x2="160" y2="84" stroke="#5CC8FF" stroke-width="14" stroke-linecap="round" />
+
+  <!-- Astral Core Accent -->
+  <circle cx="128" cy="128" r="6" fill="#E6E9EF" />
+</svg>
