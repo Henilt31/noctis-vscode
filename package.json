@@ -1,0 +1,56 @@
+{
+  "name": "noctis-theme",
+  "displayName": "Noctis",
+  "description": "A dark VS Code theme engineered for deep work.",
+  "version": "0.1.0",
+  "publisher": "henilthakkar",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "deep work",
+    "noctis",
+    "minimal",
+    "accessible",
+    "contrast",
+    "syntax"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Henilt31/noctis-vscode.git"
+  },
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#08090C",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Noctis",
+        "uiTheme": "vs-dark",
+        "path": "./themes/noctis-color-theme.json"
+      },
+      {
+        "label": "Noctis Crimson",
+        "uiTheme": "vs-dark",
+        "path": "./themes/noctis-crimson-color-theme.json"
+      },
+      {
+        "label": "Noctis Violet",
+        "uiTheme": "vs-dark",
+        "path": "./themes/noctis-violet-color-theme.json"
+      },
+      {
+        "label": "Noctis Midnight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/noctis-midnight-color-theme.json"
+      }
+    ]
+  }
+}
