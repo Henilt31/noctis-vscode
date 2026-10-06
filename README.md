@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="Noctis Banner" width="100%" />
+<img src="./assets/banner.png" alt="Noctis Banner" width="100%" />
 
 # Noctis
 
@@ -79,7 +79,7 @@ An ultra-deep true-dark variant (`#030406` workbench, `#050608` canvas) tuned sp
 
 <div align="center">
 
-<img src="./assets/preview.svg" alt="Noctis Theme Preview" width="100%" />
+<img src="./assets/preview.png" alt="Noctis Theme Preview" width="100%" />
 
 </div>
 
